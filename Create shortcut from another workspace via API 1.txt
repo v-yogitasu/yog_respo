@@ -1,0 +1,46 @@
+step1:
+
+create two workspaces, WS1 and WS2.
+
+Step2:
+
+source:
+ws1 
+
+create LH in source workspace.
+
+ws2
+target:
+
+Create LH in target workspace, in target workspace load any file and then change that file to table.
+
+
+Step3:
+go to Bruno and then use below API
+
+post API:
+
+use source workspace id and Item id.
+============================================
+https://dailyapi.fabric.microsoft.com/v1/workspaces/c319e6a2-cd13-406b-ac8f-ff5a0dbe1d8b/items/1c287abd-38b9-46df-a0f5-d4acecc7a599/shortcuts
+
+
+below Is the body:
+============================
+
+{
+  "path": "Tables", "source tables path"
+  "name": "suppliers", "creating shortcut using this name in source workspace."
+  "target": {
+    "oneLake": {
+      "workspaceId": "ac1434a6-f4e3-49b3-8c2c-f7f07145e3ba", "target workspace id"
+      "itemId": "ed7e193d-fcb5-4206-a431-ee30452f2e9f", "target item id"
+      "path": "Tables/suppliers" "this is target complete path"
+    }
+  }
+}
+
+
+sbatkuxh2e3exbvrrlmkrfpb2q-cpeted5z4sgevdiplcu3q7axxa.daily-datawarehouse.fabric.microsoft.com
+
+
