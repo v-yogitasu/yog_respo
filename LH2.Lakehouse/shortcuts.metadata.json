@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "name": "suppliers",
+    "path": "/Tables",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/suppliers",
+        "itemId": "2cbb8151-900a-40c9-8db0-ec1913cd1fff",
+        "workspaceId": "78f4cbda-8b2a-4a3c-8fad-7c82ca918c23"
+      }
+    }
+  }
+]
